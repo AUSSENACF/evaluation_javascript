@@ -1,0 +1,142 @@
+/* import Lato font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* style*/
+body {
+    background: rgb(160, 91, 11);
+    background: linear-gradient(90deg, rgba(255,207,46,1) 0%, rgba(108,60,0,1) 100%);
+    font-family: "Lato",sans-serif;
+    font-size: 13px;
+}
+#switch_player_point{
+    height: 12px;
+    width: 12px;
+    
+}
+
+
+
+
+
+#roll_button , #hold_button, #button_plus{
+    color: #cc889c ;
+}
+#player_1, #player_2{
+    font-size: 54px;
+    height: 25px;
+    margin-top: 50px;
+}
+
+/*  responsive board game large window */
+
+
+/*header*/
+
+#header_game_board{
+    background: linear-gradient(to left, #ffffff 0%, #ffffff 50%, #f7f7f7 50%, #f7f7f7 100%);
+    height: 80px;
+    padding:10px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+#new_game_button{
+    margin-top: 25px;
+}
+/* middle of the board game */
+#middle_game_board{
+    background: linear-gradient(to left, #ffffff 0%, #ffffff 50%, #f7f7f7 50%, #f7f7f7 100%);
+}
+#dice{
+    height:200px;
+    margin-top: 120px;
+}
+
+#dice_image{
+    height: 100px;
+width: 100px;
+}
+#hold, #roll{
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* player board game  left and right*/
+#player1_game_board{
+    background-color:#f7f7f7 ;
+    height: 500px;
+}
+
+#player2_game_board{
+    background-color:#ffffff;
+    height: 500px;
+}
+#current_score{
+    background-color: #ed4c48;
+    margin-top: 60px;
+}
+
+#current_score_1 , #current_score_2{
+    color: white;
+    font-size: 24px;
+}
+#stockable_score_1 , #stockable_score_2{
+    font-size: 72px;
+    height: 150px;
+    color: #cc889c;
+    margin-top: 40px;
+}
+
+
+
+/* responsive board game small window*/
+@media screen and (max-width: 768px) {
+
+    /* header board game*/
+    #header_game_board{
+        background: linear-gradient(to left, #ffffff 0%,#ffffff 100%);
+        height: 45px;
+    }
+    #new_game_button{
+        margin-top: 0px;
+    }
+    /*middle of the board game*/
+    #middle_game_board{
+        background: linear-gradient(to top, #ffffff 0%, #ffffff 50%, #f7f7f7 50%, #f7f7f7 100%);   
+    }
+
+    #dice{
+        height: 60px;
+        margin-top: 0px;
+    }
+    
+    #dice_image{
+        height: 60px;
+    width: 60px;
+    }
+
+    #hold, #roll{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    /* player board game  left and right*/
+    #player2_game_board , #player1_game_board{
+        height: 250px;
+    }
+    #player_1, #player_2{
+        font-size:32px;
+        height: 25px;
+        margin-top: 0px;
+    }
+    
+    #stockable_score_1 , #stockable_score_2{
+        font-size: 72px;
+        height: 100px;
+        color: #cc889c;
+        margin-top: 40px;
+    }
+    #current_score{
+
+        margin-top: 0px;
+    }
+
+}
